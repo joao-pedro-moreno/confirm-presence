@@ -1,0 +1,10 @@
+#confirm-input {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10%;
+    padding: 10px;
+}
