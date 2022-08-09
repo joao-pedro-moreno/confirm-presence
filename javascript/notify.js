@@ -5,6 +5,7 @@ const notifyTextContent = document.querySelector(".notify-text")
 
 function notify(notifyType, notifyText, notifyTime) {
     if (notifyType == "success") {
+        notifyDiv.classList.remove("notify-error")
         notifyDiv.classList.add("notify-success")
         notifyDiv.style.opacity = "1"
         notifyIcon.classList.add("bxs-check-circle")
@@ -16,6 +17,7 @@ function notify(notifyType, notifyText, notifyTime) {
             notifyDiv.classList.remove("notify-success")
         }, notifyTime * 1000)
     } else if (notifyType == "error") {
+        notifyDiv.classList.remove("notify-success")
         notifyDiv.classList.add("notify-error")
         notifyDiv.style.opacity = "1"
         notifyIcon.classList.add("bxs-x-circle")
