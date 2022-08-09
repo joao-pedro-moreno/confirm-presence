@@ -1,0 +1,40 @@
+.notify-div {
+    position: absolute;
+    right: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.notify-div.notify-success {
+    background-color: #0cf25da8;
+    box-shadow: 2px 2px 20px #038C3E;
+}
+
+.notify-div.notify-error {
+    background-color: #D92525a8;
+    box-shadow: 2px 2px 20px #D92525;
+}
+
+.bxs-x-circle {
+    color: white !important;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.bxs-check-circle {
+    color: white !important;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.notify-content {
+    padding: 5px;
+}
+
+.notify-title {
+    font-weight: 500;
+}

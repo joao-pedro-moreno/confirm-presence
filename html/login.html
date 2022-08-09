@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/notify.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Confirm Presence</title>
 </head>
 <body>
     <h1 class="title">Confirm Presence</h1>
+
+    <div class="notify-div">
+        <i class='bx notify-icon'></i>
+        <div class="notify-content">
+            <h2 class="notify-title"></h2>
+            <p class="notify-text"></p>  
+        </div>
+    </div>
 
     <div class="section">
         <input type="password" name="password" id="password-input" placeholder="Password">
@@ -25,5 +35,6 @@
 
     
     <script src="../javascript/login.js"></script>
+    <script src="../javascript/notify.js"></script>
 </body>
 </html>

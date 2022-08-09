@@ -8,6 +8,11 @@ function openInNewTab(url) {
 
 function login() {
     if (passwordInput.value == password) {
-        openInNewTab("../html/confirmed.html")
+        notify("success","You will be redirected in a few seconds", 5)
+        setTimeout(function() {
+            openInNewTab("../html/confirmed.html")
+        }, 4000)
+    } else {
+        notify("error","Wrong password try again", 5)
     }
 }
