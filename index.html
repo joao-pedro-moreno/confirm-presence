@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/notify.css">
+    <link rel="stylesheet" href="./styles/light.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Confirm Presence</title>
 </head>
-<body>
+<body id="body-theme">
     <h1 class="title">Confirm Presence</h1>
 
     <main>
@@ -19,17 +20,19 @@
             <p class="local information"><i class='bx bxs-map'></i> St. Matthew's Church</p>
             <p class="hour information"><i class='bx bxs-time-five'></i> 20:00 h</p>
             <p class="date information"><i class='bx bxs-calendar' ></i> 12/31/2022</p>
-
             <button class="confirm-page" onclick="openConfirmPage()">Confirm Presence</button>
         </div>
     </main>
 
     <a href="./html/login.html" class="view-confirmed">View Confirmed</a>
 
+    <button class="theme" onclick="changeTheme()"><i class='bx bxs-moon icon-theme'></i></button>
+
     <footer>
         <p class="author">Developed by João Pedro Moreno</p>
     </footer>
 
     <script src="./javascript/script.js"></script>
+    <script src="./javascript/theme.js"></script>
 </body>
 </html>

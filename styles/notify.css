@@ -23,12 +23,14 @@
     color: white !important;
     font-size: 40px;
     padding: 10px;
+    margin: 0 !important;
 }
 
 .bxs-check-circle {
     color: white !important;
     font-size: 40px;
     padding: 10px;
+    margin: 0 !important;
 }
 
 .notify-content {

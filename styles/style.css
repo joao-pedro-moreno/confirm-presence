@@ -48,6 +48,7 @@ main {
 
 .bx {
     color: #1B8EF2;
+    margin: 0 10px 0 0;
 }
 
 .confirm-page {
@@ -74,7 +75,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 
 .view-confirmed {
@@ -104,6 +105,25 @@ main {
 
 .back:hover {
     font-size: 18px;
+    opacity: 1;
+}
+
+.theme {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
+.icon-theme {
+    font-size: 20px;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.icon-theme:hover {
     opacity: 1;
 }
 

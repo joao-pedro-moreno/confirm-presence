@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/confirmed.css">
+    <link rel="stylesheet" href="../styles/light.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Confirm Presence</title>
 </head>
-<body>
+<body id="body-theme">
     <h1 class="title">Confirm Presence</h1>
 
     <a href="../index.html" class="back">&lt; Back</a>
@@ -47,10 +48,9 @@
         <p class="confirmed-name">João Pedro Moreno</p>
     </div>
 
-    <footer>
-        <p class="author-name">Developed by João Pedro Moreno</p>
-    </footer>
+    <button class="theme" onclick="changeTheme()"><i class='bx bxs-moon icon-theme'></i></button>
 
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/theme.js"></script>
 </body>
 </html>

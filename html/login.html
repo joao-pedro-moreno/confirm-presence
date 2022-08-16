@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/notify.css">
+    <link rel="stylesheet" href="../styles/light.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Confirm Presence</title>
 </head>
-<body>
+<body id="body-theme">
     <h1 class="title">Confirm Presence</h1>
 
     <div class="notify-div">
@@ -29,6 +30,8 @@
 
     <a href="../index.html" class="back">&lt; Back</a>
 
+    <button class="theme" onclick="changeTheme()"><i class='bx bxs-moon icon-theme'></i></button>
+
     <footer>
         <p class="author">Developed by João Pedro Moreno</p>
     </footer>
@@ -36,5 +39,6 @@
     
     <script src="../javascript/login.js"></script>
     <script src="../javascript/notify.js"></script>
+    <script src="../javascript/theme.js"></script>
 </body>
 </html>

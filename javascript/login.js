@@ -7,7 +7,7 @@ function openInNewTab(url) {
 }
 
 function login() {
-    if (passwordInput.value == password) {
+    if (passwordInput.value === password) {
         notify("success","You will be redirected in a few seconds", 5)
         setTimeout(function() {
             openInNewTab("../html/confirmed.html")

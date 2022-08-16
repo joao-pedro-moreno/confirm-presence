@@ -1,0 +1,34 @@
+body.light {
+    background-color: white;
+}
+
+body.light .informations {
+    color: #1D1E26;
+}
+
+body.light .author {
+    color: #1D1E26;
+}
+
+body.light #password-input {
+    box-shadow: 3px 3px 10px #1D1E26;
+    color: #1D1E26;
+}
+
+body.light .confirmed-name {
+    color: #1D1E26;
+}
+
+body.light .footer {
+    color: #1D1E26;
+    background-color: white;
+}
+
+body.light #confirm-input {
+    box-shadow: 3px 3px 10px #1D1E26;
+    color: #1D1E26;
+}
+
+body.light .icon-theme {
+    color: #1D1E26 !important;
+}
