@@ -9,6 +9,7 @@
 
 body {
     background-color: #1D1E26;
+    transition: all 0.3s ease;
 }
 
 .title {
@@ -34,6 +35,7 @@ main {
 .informations {
     color: white;
     margin: 0 40px;
+    transition: all 0.3s ease;
 }
 
 .couple-name {
@@ -75,7 +77,8 @@ main {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    /* opacity: 0.3; */
+    opacity: 0.3;
+    transition: all 0.3s ease;
 }
 
 .view-confirmed {
