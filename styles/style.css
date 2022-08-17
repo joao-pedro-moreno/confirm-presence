@@ -82,7 +82,7 @@ main {
 }
 
 .view-confirmed {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     left: 2%;
     text-decoration: none;
