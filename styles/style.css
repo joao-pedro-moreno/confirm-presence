@@ -54,6 +54,8 @@ main {
 }
 
 .confirm-page {
+    display: block;
+    text-align: center;
     background-color: #1B8EF2;
     border: none;
     outline: none;
@@ -63,7 +65,13 @@ main {
     font-size: 20px;
     margin-top: 20%;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.3s ease;
+    padding-top: 4px;
+}
+
+.confirm-page:visited {
+    color: #1D1E26;
 }
 
 .confirm-page:hover {

@@ -1,3 +1,15 @@
+<?php
+    if(isset($_POST["submit"]))
+    {
+        // print_r($_POST['name']);
+
+        include_once("config.php");
+
+        $name = $_POST["name"];
+
+        $result = mysqli_query($connection, "INSERT INTO `confirmed_names`(`name`) VALUES ('$name')");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +40,11 @@
         <div class="informations">
             <h3 class="couple-name">John & Julia</h3>
 
-            <input type="text" name="confirm" id="confirm-input" placeholder="Enter your first name">
-            <br>
-
-            <button class="confirm-page" onclick="confirmName()">Confirm Presence</button>
+            <form action="confirmPage.php" method="POST">
+                <input type="text" name="name" id="name" class="confirm-input" required>
+                <br>
+                <input type="submit" name="submit" id="submit" class="confirm-page" value="Confirm Presence">
+            </form>
         </div>
     </main>
 
