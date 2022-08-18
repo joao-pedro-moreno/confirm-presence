@@ -9,3 +9,22 @@
     padding: 5px 0;
     transition: all 0.3s ease;
 }
+
+.logout {
+    position: fixed;
+    bottom: 6%;
+    left: 2%;
+    text-decoration: none;
+    color: #3866F2;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.logout:visited {
+    color: #3866F2;
+}
+
+.logout:hover {
+    font-size: 18px;
+    opacity: 1;
+}

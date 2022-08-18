@@ -1,3 +1,11 @@
+<?php
+
+    session_start();
+    include("config.php");
+
+    $result = mysqli_query($connection, "SELECT `password-id`, `password` FROM `connection_password` WHERE `password-id` = 2")
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,18 +23,26 @@
 <body id="body-theme" onload="checkTheme()">
     <h1 class="title">Confirm Presence</h1>
 
-    <div class="notify-div">
-        <i class='bx notify-icon'></i>
+    <?php
+    if(isset($_SESSION['no_authentication'])):
+    ?>
+    <div class="notify-div notify-error">
+        <i class='bx bxs-x-circle notify-icon'></i>
         <div class="notify-content">
-            <h2 class="notify-title"></h2>
-            <p class="notify-text"></p>  
+            <h2 class="notify-title">Error</h2>
+            <p class="notify-text">Wrong password try again</p>  
         </div>
     </div>
-
+    <?php
+    endif;
+    unset($_SESSION['no_authentication']);
+    ?>
     <div class="section">
-        <input type="password" name="password" id="password-input" placeholder="Password">
-        <br>
-        <button class="login" onclick="login()">Login</button>
+        <form action="login.php" method="POST">
+            <input type="password" name="password" id="password-input" placeholder="Password">
+            <br>
+            <button type="submit" class="login">Login</button>
+        </form>
     </div>
 
     <a href="../index.html" class="back">&lt; Back</a>
@@ -38,7 +54,7 @@
     </footer>
 
     
-    <script src="../javascript/login.js"></script>
+    <!-- <script src="../javascript/login.js"></script> -->
     <script src="../javascript/notify.js"></script>
     <script src="../javascript/theme.js"></script>
 </body>
